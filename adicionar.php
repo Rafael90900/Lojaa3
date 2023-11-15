@@ -2,8 +2,10 @@
 
 session_start();
 
+include('validalogin.php');
 include('conexao.php');
 include('funcoes.php');
+include('validaadmingerente.php');
 
 $nome = isset($_POST['nome']) ? $_POST['nome'] : '';
 $cpf = isset($_POST['cpf']) ? $_POST['cpf'] : '';
